@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        
+        .box {
+            padding: 30px;
+            border: 3px solid brown;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .box {
+            background-color: teal;
+            color: white;
+        }
+       
+       
+        /* flex box */
+        
+        .container {
+            width: 300px;
+            height: 450px ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+           
+        }
+        .box:nth-child(1) {
+            align-self: flex-end;
+        }
+        .box:nth-child(3) {
+            align-self: stretch;
+        }
+        .box:nth-child(5) {
+            align-self: center;
+        }
+        .box:nth-child(2) {
+            align-self: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>ALIGN SELF</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>

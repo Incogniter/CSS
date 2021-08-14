@@ -1,0 +1,25 @@
+body {
+    background-color: aliceblue;
+    padding: 50px;
+    color: black;
+
+}
+h3 {
+    font-size: 50px;
+}
+.container {
+    border: 5px solid gray;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.box {
+    padding: 50px;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: teal;
+    color: white;
+}
+
+

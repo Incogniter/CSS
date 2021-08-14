@@ -14,6 +14,7 @@
         body {
             background-color: lemonchiffon;
         }
+       
         a {
             color: floralwhite;
         }
@@ -35,13 +36,18 @@
             background-color: teal;
             color: white;
         }
+         
+        p::first-line {
+            color: blue;
+        }
         p {
            color: firebrick;
+           text-indent: 50px;
+           text-align: center;
            
         }
-        #image {
-            height: 100px;
-            width: 1500px;
+        img {
+            vertical-align: baseline;
         }
         
         /* flex box */
@@ -62,6 +68,10 @@
             justify-content: space-around;
             */
         }
+       
+        .content {
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -74,11 +84,14 @@
         <div class="box"><a href="#">SERVICE</a></div>
         
     </div>
-    <div>
-        <img src="https://t3.ftcdn.net/jpg/03/77/18/50/360_F_377185056_TY5U9uR6La6ItZXMYFwkT6KYIfidK8sd.jpg">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quod autem officiis quaerat molestiae facilis laborum! Ad fugiat necessitatibus expedita corrupti neque voluptatum similique consectetur quos maiores vero! Odit, quisquam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis velit magni qui unde nisi quae, eius illo, quis possimus vel autem? Possimus nostrum earum maiores. Molestiae, porro. Tempora facilis dolorum ullam doloribus illum quos eaque, dignissimos cum! Consequatur, sint.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam voluptatem inventore, sunt architecto repudiandae commodi, aliquid beatae voluptates quae animi culpa odio consequuntur neque quasi dolorem nemo eius nisi?</p>
+    
+    <div class="content">
+        <img src="https://t3.ftcdn.net/jpg/03/77/18/50/360_F_377185056_TY5U9uR6La6ItZXMYFwkT6KYIfidK8sd.jpg">        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quod autem officiis quaerat molestiae facilis laborum! Ad fugiat necessitatibus expedita corrupti neque voluptatum similique consectetur quos maiores vero! Odit, quisquam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis velit magni qui unde nisi quae, eius illo, quis possimus vel autem? Possimus nostrum earum maiores. Molestiae, porro. Tempora facilis dolorum ullam doloribus illum quos eaque, dignissimos cum! Consequatur, sint.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam voluptatem inventore, sunt architecto repudiandae commodi, aliquid beatae voluptates quae animi culpa odio consequuntur neque quasi dolorem nemo eius nisi?
+            
+        </p>
     </div>
     
 </body>

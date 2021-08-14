@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        
+        .box {
+            padding: 30px;
+            border: 3px solid brown;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .box {
+            background-color: teal;
+            color: white;
+        }
+       
+       
+        /* flex box */
+        
+        
+        .container {
+            width: 2px solid black;
+            height: 100px ;
+            display: flex;
+            padding: 0;
+            
+        }
+        .box {
+            margin: 1px;
+            padding: 1px;
+            width: 200px;
+            text-align: center;
+            flex-shrink: 1;
+        }
+        .box:nth-child(2) {
+            flex-shrink: 3;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>FLEX SHRINK</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        
+        .box {
+            padding: 30px;
+            border: 3px solid brown;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .box {
+            background-color: teal;
+            color: white;
+        }
+       
+       
+        /* flex box */
+        
+        
+        .container {
+            width: 600px;
+            display: flex;
+        }
+        .box:nth-child(1) {
+            order:5;
+        }
+        .box:nth-child(2) {
+            order:1;
+        }
+        .box:nth-child(3) {
+            order:6;
+        }
+        .box:nth-child(4) {
+            order:2;
+        }
+        .box:nth-child(5) {
+            order:3;
+        }
+        .box:nth-child(6) {
+            order:4;
+        }
+    </style>
+</head>
+<body>
+    <h2>FLEX ORDER</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>
