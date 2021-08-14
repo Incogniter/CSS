@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>SELCTOR PROPERTY</title>
+        <style>
+            div + p {
+                color: orangered;
+            }
+            div[id]{
+                background-color: salmon;
+            }
+            div[class]{
+                background-color: orchid;
+            }
+            .inner {
+                color: rgb(203, 238, 175);
+            } 
+            a[title="link-1"] {
+                color: olive;
+            }
+            a[href^="test"]  {
+                color: red;
+                background-color: salmon;
+            } 
+            a[href$="g"]  {
+                color: purple;
+                background-color: rosybrown;
+            }
+            h2{
+                background-color: skyblue;
+                
+            }       
+        </style>
+    </head>
+    <body>
+        <h1>MORE SELECTORS PROPERTIES IN CSS</h1>
+        <h2><q>^ for starting letter</q></h2>
+        <h2><q>$ this is for ending letter</q></h2>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facere.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellendus sapiente nihil saepe eos unde possimus illo temporibus sequi amet provident non harum, obcaecati voluptas cumque voluptatum velit dolor consequatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti necessitatibus in perferendis mollitia et suscipit, temporibus provident ab error iste debitis consequuntur tenetur dolor reprehenderit, explicabo, impedit enim doloribus?</p>
+            <div class="inner">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, incidunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, natus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, odio.</p>
+            </div>
+        </div>
+        <div id="text"><h2>if div[id] only the id attribute will change and if its div[class] then all  the class  attributes will change..refer line 10.....</h2></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci fugiat soluta saepe nisi iure minus harum unde distinctio voluptatem reiciendis tempora, tenetur expedita eligendi at modi. Laudantium, alias dolor?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque in iusto quae vero sed ex est laboriosam reprehenderit cupiditate! Numquam, eum eius! Odio dolor atque esse? Quod reiciendis tenetur repellendus!</p>
+        <a href="#" title="link-1">link-1</a>
+        <a href="test.html" title="link-2">link-2</a>
+        <a href="test.css" title="link-3">link-3</a>
+        <a href="twt.png" title="link-4">link-4</a>
+        <a href="tct.jpeg" title="link-1">link-5</a>
+        
+    </body>
+</html>

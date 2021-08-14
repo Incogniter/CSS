@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>DISPLAY PROPERTY </title>
+        <style>
+            div{
+                background-color: silver;
+            }
+            h1{
+                text-align: center;
+                padding: 2px;
+            }
+            ul li{
+                list-style-type: none;
+                display: inline-block;
+                padding: 0px 5px 0px 5px;
+                
+            }
+            ul li :hover{
+                background-color: royalblue;
+            }
+            a{
+                color:red;
+            }
+            .menu{
+                
+                width: 350px;
+                margin-left: 800px;
+                padding: 5px 0px 0px 0px;
+
+            }
+            .list{
+                width: 30px;
+                height: 0px;
+                background-color: black;
+                margin: 6px ;
+            }
+            #line{
+                display: inline-block;
+                margin-left:  1175px;
+                margin-top: -45;
+                background-color: red;
+                cursor: pointer;
+            }
+            #line :hover{
+                background-color: royalblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <h1>DISPLAY PROPERTY</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            </div>
+            <div id="line">
+                <div class="menu list"></div>
+                <div class="menu list"></div>
+                <div class="menu list"></div>
+            </div>
+        <hr>     
+        </div>
+    </body>
+</html>
